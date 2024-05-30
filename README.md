@@ -1,2 +1,2 @@
 # test-iframe-queryparams
-test iframw show queryparams
+test iframe show queryparams
