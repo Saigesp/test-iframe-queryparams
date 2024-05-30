@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test iframe queryparams</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <h1>Test iframe queryparams</h1>
+  <p>There are que query parameters received:</p>
+  <ul class="js-list">
+  </ul>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    for (const [key, value] of urlParams) {
+      const li = document.createElement('li');
+      li.textContent = `${key}: ${value}`;
+      document.querySelector('.js-list').appendChild(li);
+    }
+  </script>
+</body>
+</html>
